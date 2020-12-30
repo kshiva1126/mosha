@@ -1,0 +1,157 @@
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em 0 1em 0;
+}
+
+.header .title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu .item {
+  margin: 0 1em;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+/* メインヴィジュアル */
+.mainvisual {
+  position: relative;
+}
+
+.mainvisual .image {
+  width: 100%;
+}
+
+.mainvisual .text {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%); /* 文字分のズレを補正 */
+  text-align: center;
+}
+
+.mainvisual .text .title {
+  font-size: 2em;
+  margin: 0.5em 0;
+  line-height: 1.5em;
+}
+
+.mainvisual .text .content{
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+/* デイトラとは */
+
+.daytra {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.daytra .title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.daytra .contents {
+  display: flex;
+}
+
+.daytra .contents .content {
+  width: calc(100% / 2);
+  margin: 0 0.5em;
+}
+
+.daytra .contents .text {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+/* コース一覧 */
+.courses {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.courses .title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.courses .contents {
+  display: flex;
+}
+
+.courses .contents .content {
+  width: calc(100% / 3);
+  margin: 0 1em;
+}
+
+.courses .contents .content img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+/* お問い合わせ */
+.contact {
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+}
+
+.contact .title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 1em 0;
+}
+
+.contact .text {
+  font-size: 0.8em;
+}
+
+.contact .input {
+  width: 40%;
+  border-radius: 20px;
+  border: 2px solid lightgray;
+  line-height: 2em;
+}
+
+.contact .submit {
+  margin: 1em auto;
+  width: 25%;
+  line-height: 50px;
+  background-color: lightcoral;
+  font-weight: 600;
+  color: white;
+}
+
+/* footer */
+.footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+}
+
+.footer .divider {
+  border-top: 1px solid #bbb;
+  padding-bottom: 1em;
+}
+
+.footer .copyright {
+  float: right;
+  font-size: 0.5em;
+  font-weight: 300;
+}
