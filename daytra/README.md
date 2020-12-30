@@ -4,5 +4,6 @@
 下記コマンド実行後、localhost:1234にアクセス
 
 ```
+$ yarn
 $ yarn dev
 ```
