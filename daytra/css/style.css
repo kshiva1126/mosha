@@ -1,3 +1,6 @@
+/* PC */
+@media (min-width: 900px) {
+
 /* ヘッダー */
 .header {
   display: flex;
@@ -10,17 +13,18 @@
   font-weight: 900;
 }
 
-.menu {
+.header .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.menu .item {
+.header .menu .item {
   margin: 0 1em;
   font-size: 0.8em;
   font-weight: 600;
 }
+
 
 /* メインヴィジュアル */
 .mainvisual {
@@ -33,7 +37,7 @@
 
 .mainvisual .text {
   position: absolute;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* 文字分のズレを補正 */
   text-align: center;
@@ -51,7 +55,6 @@
 }
 
 /* デイトラとは */
-
 .daytra {
   width: 80%;
   text-align: center;
@@ -138,20 +141,197 @@
   color: white;
 }
 
-/* footer */
-.footer {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 3em;
-}
+  /* footer */
+  .footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
 
-.footer .divider {
-  border-top: 1px solid #bbb;
-  padding-bottom: 1em;
-}
+  .footer .divider {
+    border-top: 1px solid #bbb;
+    padding-bottom: 1em;
+  }
 
-.footer .copyright {
-  float: right;
-  font-size: 0.5em;
-  font-weight: 300;
+  .footer .copyright {
+    float: right;
+    font-size: 0.5em;
+    font-weight: 300;
+  }
+}
+/* SP */
+@media (max-width: 900px) {
+  /* ヘッダー */
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 1em 0 1em 0; */
+    margin: 1em 0; /* 書き直した */
+  }
+
+  .header .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-bottom: 1em;
+  }
+
+  .header .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .header .menu .item {
+    margin: 0 1em;
+    font-size: 0.8em;
+    font-weight: 600;
+  }
+
+  /* メインヴィジュアル */
+  .mainvisual {
+    width: 100%;
+    position: relative;
+  }
+
+  .mainvisual .image {
+    /* width: 100%; */
+    width: 375px;
+    height: 500px;
+    /* 高さに合わせて画像切り抜くためにプロパティ追加 */
+    /* https://www.webcreatorbox.com/tech/object-fit */
+    object-position: 0 100%;
+    object-fit: cover;
+  }
+
+  .mainvisual .text {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(0, -50%);
+    text-align: center;
+  }
+
+  .mainvisual .text .title {
+    font-size: 2em;
+    margin: 0.5em 0;
+    /* line-height: 1.5em; */
+  }
+
+  .mainvisual .text .content{
+    font-size: 0.8em;
+    line-height: 1.5em;
+  }
+
+  /* デイトラとは */
+  .daytra {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .daytra .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+
+  .daytra .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .daytra .contents .content {
+    width: 100%;
+    margin: 0 0.5em;
+  }
+
+  .daytra .contents .text {
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  /* コース一覧 */
+  .courses {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .courses .title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+
+  .courses .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses .contents .content {
+    width: 100%;
+    margin: 0 1em 1.5em 1em;
+  }
+
+  .courses .contents .content img {
+    width: 100%;
+    align-self: flex-start;
+  }
+
+  /* お問い合わせ */
+  .contact {
+    width: 90%;
+    margin: 2em auto;
+    text-align: center;
+  }
+
+  .contact .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 1em 0;
+  }
+
+  .contact .text {
+    font-size: 0.8em;
+    margin: 1.5em 0;
+  }
+
+  .contact .input {
+    height: 3em;
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    line-height: 2em;
+  }
+
+  .contact .submit {
+    margin: 1em auto;
+    height: 4em;
+    width: 100%;
+    line-height: 50px;
+    background-color: lightcoral;
+    font-weight: 600;
+    color: white;
+  }
+
+  /* footer */
+  .footer {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+  }
+
+  .footer .divider {
+    border-top: 1px solid #bbb;
+    margin-bottom: 1em;
+  }
+
+  .footer .copyright {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 300;
+  }
 }
