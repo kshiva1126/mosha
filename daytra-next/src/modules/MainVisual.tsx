@@ -6,7 +6,7 @@ export default function MainVisual() {
     <>
       <MainVisualContent>
         <Background>
-          <Image src="/img/main-visual.png" layout="fill" />
+          <Image src="/img/main-visual.png" layout="fill" objectFit="cover" />
         </Background>
       </MainVisualContent>
     </>
@@ -16,9 +16,13 @@ export default function MainVisual() {
 const MainVisualContent = styled.div`
   width: 100%;
   height: 640px;
+  position: relative;
 `
 
 const Background = styled.div`
   width: 100%;
-  height: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 `
