@@ -12,4 +12,5 @@ const StyledHeadline = styled.h2`
   font-size: 24px;
   font-weight: bold;
   letter-spacing: .05em;
+  text-align: center;
 `
