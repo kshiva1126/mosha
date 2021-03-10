@@ -1,6 +1,6 @@
-/* ----------------------------------------------------------
-  reset
----------------------------------------------------------- */
+import { css } from 'styled-components'
+
+const reset = css`
 *,
 html,
 body,
@@ -158,3 +158,6 @@ a {
 i {
   font-style: normal;
 }
+`
+
+export default reset;
