@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Container from "../components/Container"
+import Container from "../elements/Container"
 
 export default function Footer() {
   return (
@@ -15,7 +15,8 @@ export default function Footer() {
   )
 }
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
+  margin-top: 50px;
 `
 
 const Content = styled.div`

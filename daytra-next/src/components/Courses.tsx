@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import Container from '../components/Container'
-import Headline from '../components/Headline'
+import Container from '../elements/Container'
+import Headline from '../elements/Headline'
 
 export default function Courses() {
   return (

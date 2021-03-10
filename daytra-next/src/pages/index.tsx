@@ -1,9 +1,9 @@
 import Header from '../components/Header';
-import MainVisual from '../modules/MainVisual';
-import About from '../modules/About';
-import Courses from '../modules/Courses';
-import Contact from '../modules/Contact';
-import Footer from '../modules/Footer';
+import MainVisual from '../components/MainVisual';
+import About from '../components/About';
+import Courses from '../components/Courses';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
