@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default function Header() {
   return (
     <>
-      <HeaderContent>
+      <HeaderStyled>
         <HeaderLogo>
           <span>30DAYSトライアル</span>
         </HeaderLogo>
@@ -20,12 +20,12 @@ export default function Header() {
             <HeaderLink>お問い合わせ</HeaderLink>
           </Link>
         </Menu>
-      </HeaderContent>
+      </HeaderStyled>
     </>
   )
 }
 
-const HeaderContent = styled.div`
+const HeaderStyled = styled.div`
   margin: auto 100px;
   height: 80px;
   display: flex;
